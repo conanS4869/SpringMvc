@@ -14,12 +14,12 @@
 <!--    <mvc:default-servlet-handler/>-->
 <!--    <mvc:annotation-driven/>-->
 
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/jsp/"/>
-        <property name="suffix" value=".jsp"/>
-    </bean>
+<!--    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="InternalResourceViewResolver">-->
+<!--        <property name="prefix" value="/WEB-INF/jsp/"/>-->
+<!--        <property name="suffix" value=".jsp"/>-->
+<!--    </bean>-->
 
-    <bean name="/t1" class="com.conan.controller.ControllerTest1"/>
+<!--    <bean name="/t1" class="com.conan.controller.ControllerTest1"/>-->
 
 
 </beans>
