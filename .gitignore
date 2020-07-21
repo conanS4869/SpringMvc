@@ -41,3 +41,4 @@ build/
 ### Project ###
 test-output/
 velocity.log
+out/
