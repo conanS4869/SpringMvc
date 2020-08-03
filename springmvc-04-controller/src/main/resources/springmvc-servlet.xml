@@ -9,11 +9,12 @@
                         https://www.springframework.org/schema/context/spring-context.xsd
                         http://www.springframework.org/schema/mvc
                         https://www.springframework.org/schema/mvc/spring-mvc.xsd">
-
+<!--自动扫描包，让指定包下的注解生效， 有ioc容易统一管理-->
     <context:component-scan base-package="com.conan.controller"/>
+<!--    过滤静态资源-->
 <!--    <mvc:default-servlet-handler/>-->
 <!--    <mvc:annotation-driven/>-->
-
+<!--视图解析-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>

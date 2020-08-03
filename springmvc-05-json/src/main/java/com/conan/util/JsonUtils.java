@@ -1,4 +1,4 @@
-package com.conan.utils;
+package com.conan.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,9 +16,9 @@ public class JsonUtils {
         ObjectMapper mapper = new ObjectMapper();
         // 不使用时间戳方式
         mapper.configure(SerializationFeature.WRITE_DATE_KEYS_AS_TIMESTAMPS, false);
+        // 自定义时间格式
         SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
         mapper.setDateFormat(sdf);
-
         try {
             return mapper.writeValueAsString(object);
         } catch (JsonProcessingException e) {

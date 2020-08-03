@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/user")
 public class UserController {
     @GetMapping("/t1")
+//    前端参数 username
     public String test1(@RequestParam("name") String name, Model model) {
         model.addAttribute("msg", name);
         return "test";
