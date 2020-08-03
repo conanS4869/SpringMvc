@@ -9,11 +9,9 @@
             $.post({
                 url: "${pageContext.request.contextPath}/a1",
                 data: {"name": $("#username").val()},
-                success: function (data) {
-                    alert(data);
-                },
-                error: function () {
-
+                success: function (data,status) {
+                    console.log("data="+data);
+                    console.log("status="+status);
                 }
             });
         }
