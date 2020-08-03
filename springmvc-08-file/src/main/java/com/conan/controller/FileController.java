@@ -31,12 +31,11 @@ public class FileController {
         String path = request.getSession().getServletContext().getRealPath("/upload");
         String fileName = "1.txt";
 
-
         response.reset();
         response.setCharacterEncoding("UTF-8");
         response.setContentType("multipart/form-data");
 
-        response.setHeader("Content-Dispostion",
+        response.setHeader("Content-Disposition",
                 "attachment;fileName="+ URLEncoder.encode(fileName,"UTF-8"));
 
         File file = new File(path, fileName);
