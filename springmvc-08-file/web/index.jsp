@@ -8,5 +8,7 @@
     <input type="file" name="file"/>
     <input type="submit" value="upload"/>
   </form>
+<%--  从web下下载--%>
+  <a href="${pageContext.request.contextPath}/statics/1.txt">下载</a>
   </body>
 </html>
